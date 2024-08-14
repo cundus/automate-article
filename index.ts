@@ -1,7 +1,8 @@
-import app from "./server";
-import { config } from "dotenv";
-
-config();
+import dotenv from "dotenv";
+dotenv.config({
+   path: "./.env",
+});
+import app from "./app/server";
 
 const port = process.env.PORT || 3000;
 
